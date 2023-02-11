@@ -6,9 +6,19 @@ const trendMovieUrl = main_url + "/trending/all/day?" + api_key;
 const trendMovieUrlWeek = main_url + "/trending/all/week?" + api_key;
 const latestMovieUrl = main_url + "/movie/latest?" + api_key;
 const popularMovieUrl = main_url + "/movie/popular?" + api_key;
+const searchApi = main_url + "/search/movie?" + api_key;
 
 const trendMovieWrapper = document.getElementsByClassName("movie-card-wrapper");
 const latestWrapper = document.getElementById("latest-card-wrapper");
+
+const trendTodayWrapper = document.getElementById('trend-today-wrapper')
+const trendWeekWrapper = document.getElementById('trend-week-wrapper')
+
+const onTv = document.getElementById('on_tv')
+const inTheaters = document.getElementById('in_theaters')
+
+const onTvWrapper = document.getElementById('on_tv_wrapper')
+const inTheatersWrapper = document.getElementById('in_theaters_wrapper')
 
 const trendToday = document.getElementById('trend-today')
 const trendWeek = document.getElementById('trend-week')
@@ -17,12 +27,40 @@ trendToday.addEventListener('click', (event) => {
   event.preventDefault()
   trendingMovie(trendMovieUrl)
   console.log('true');
+  trendTodayWrapper.classList.add('anchor-selected')
+  trendWeekWrapper.classList.remove('anchor-selected')
+  trendWeekWrapper.classList.add('anchor')
+  trendTodayWrapper.classList.remove('anchor')
 })
 
 trendWeek.addEventListener('click', (event) => {
   event.preventDefault()
   trendingMovie(trendMovieUrlWeek)
   console.log('true');
+  trendWeekWrapper.classList.add('anchor-selected')
+  trendTodayWrapper.classList.remove('anchor-selected')
+  trendTodayWrapper.classList.add('anchor')
+  trendWeekWrapper.classList.remove('anchor')
+})
+
+onTv.addEventListener('click', (event) => {
+  event.preventDefault()
+  popularMovie()
+  console.log('true');
+  onTvWrapper.classList.add('anchor-selected')
+  inTheatersWrapper.classList.remove('anchor-selected')
+  inTheatersWrapper.classList.add('anchor')
+  onTvWrapper.classList.remove('anchor')
+})
+
+inTheaters.addEventListener('click', (event) => {
+  event.preventDefault()
+  popularMovie()
+  console.log('true');
+  inTheatersWrapper.classList.add('anchor-selected')
+  onTvWrapper.classList.remove('anchor-selected')
+  onTvWrapper.classList.add('anchor')
+  inTheatersWrapper.classList.remove('anchor')
 })
 
 function trendingMovie(url) {
