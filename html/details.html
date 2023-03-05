@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Details</title>
+  </head>
+  <body>
+    <!-- ==================================================  HEADER  ================================================== -->
+    <div class="containers">
+      <header>
+        <div class="nav-wrapper">
+          <a href="../index.html">
+            <img
+              width="154"
+              height="20"
+              src="../media/section_img_4.svg"
+              alt="tmdb"
+            />
+          </a>
+          <div class="dropdown movie_text">
+            <button
+              class="btn btn-secondary active"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Movies
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Popular</a></li>
+              <li><a class="dropdown-item" href="#">Now Playing</a></li>
+              <li><a class="dropdown-item" href="#">Upcoming</a></li>
+              <li><a class="dropdown-item" href="#">Top Rated</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary active"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              TV Shows
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Popular</a></li>
+              <li><a class="dropdown-item" href="#">Airing Today</a></li>
+              <li><a class="dropdown-item" href="#">On TV</a></li>
+              <li><a class="dropdown-item" href="#">Top Rated</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary active"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              People
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Popular People</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary active"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Discussions</a></li>
+              <li><a class="dropdown-item" href="#">Leaderboard</a></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><a class="dropdown-item" href="#">Api</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex">
+          <p>
+            <i class="fa-solid fa-plus"></i>
+          </p>
+          <div class="select-language">
+            <p>en</p>
+          </div>
+          <p>
+            <i class="fa-solid fa-bell"></i>
+          </p>
+          <p>
+            <i class="fa-solid fa-user-tie"></i>
+          </p>
+          <p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </p>
+        </div>
+      </header>
+    </div>
+    <!-- ==================================================  HEADER  ================================================== -->
+
+    <main>
+      <!-- ==================================================  MAIN HEADER  ================================================== -->
+      <section class="main__header">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle active"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Overview
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Main</a></li>
+            <li><a class="dropdown-item" href="#">Alternative Titles</a></li>
+            <li><a class="dropdown-item" href="#">Cast & Crew</a></li>
+            <li><a class="dropdown-item" href="#">Episode Groups</a></li>
+            <li><a class="dropdown-item" href="#">Seasons</a></li>
+            <li><a class="dropdown-item" href="#">Translations</a></li>
+            <li><hr class="dropdown-item my-2" /></li>
+            <li><a class="dropdown-item" href="#">Changes</a></li>
+            <li><a class="dropdown-item" href="#">Report</a></li>
+            <li><a class="dropdown-item" href="#">Edit</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Media
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Backdrops</span>
+                <span>35</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Logos</span>
+                <span>38</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Posters</span>
+                <span>43</span>
+              </a>
+            </li>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Videos
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span>Trailers</span>
+                    <span>1</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Fandom
+          </button>
+          <ul class="dropdown-menu">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Discussions
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Overview</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span>General</span>
+                    <span>1</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span>Content Issues</span>
+                    <span>0</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <li><a class="dropdown-item" href="#">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Share
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Share Link</a></li>
+            <li><a class="dropdown-item" href="#">Facebook</a></li>
+            <li><a class="dropdown-item" href="#">Tweet</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- ==================================================  BASIC  ================================================== -->
+      <section class="basic">
+        <div class="basic__wrapper">
+          <div class="backgrounds">
+          </div>
+        </div>
+      </section>
+      <!-- ==================================================  MAIN BODY  ================================================== -->
+      <section class="main__body">
+        <div class="container padding">
+          <div class="row">
+            <div class="col-9">
+              <div class="cast__wrapper">
+                <b><h3>Top Billed Cast</h3></b>
+                <div class="cast__card__wrapper">
+                  <!-- <div class="cast__card">
+                    <div class="cast__image__wrapper">
+                      <a href="#">
+                        <img
+                          src="	https://www.themoviedb.org/t/p/w138_and_h175_face/3YF19rWusxWfEI59ZM33dFhasRq.jpg"
+                          alt="Julienne More"
+                        />
+                      </a>
+                    </div>
+                    <div class="cast__content__wrapper">
+                      <b><p>Julianne Moor</p></b>
+                      <p>Madeline Phillips</p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="full__cast__crew">
+                <div class="card__title">
+                  <p class="border_bottom">
+                    <a href="#">Full Cast & Crew</a>
+                  </p>
+                  <h3>Social</h3>
+                  <button class="active__button active__border">
+                    <span>Reviews</span>
+                    <span>1</span>
+                  </button>
+                  <button class="active__button active__border">
+                    <span>Discussions</span>
+                    <span>2</span>
+                  </button>
+                </div>
+                <div class="reviews__card">
+                  <div class="photo__wrapper">
+                    <a href="#">
+                      <img
+                        src="https://www.gravatar.com/avatar/992eef352126a53d7e141bf9e8707576.jpg?s=64"
+                        alt="MSB"
+                      />
+                    </a>
+                  </div>
+                  <div class="reviews__card__content">
+                    <div class="card__content__title">
+                      <p>
+                        <a href="#">
+                          <span>A review by MSB</span>
+                        </a>
+                        <span>
+                          <button><i class="fa-solid fa-star"></i> 5.0</button>
+                        </span>
+                      </p>
+                      <small
+                        >Written by <a href="#">MSB</a> on February 20,
+                        2023</small
+                      >
+                    </div>
+                    <h6>
+                      FULL SPOILER-FREE REVIEW @
+                      https://www.msbreviews.com/movie-reviews/sharper-review
+                    </h6>
+                    <div class="review__content">
+                      <p>
+                        " Sharper is a psychological thriller driven and marked
+                        by compelling characters, but the lack of exploration of
+                        the various themes presented and an abrupt conclusion
+                        leave a slightly bitter aftertaste. The twist-filled
+                        narrative keeps viewers on their toes, but they're
+                        unlikely to be surprised by the easily anticipated
+                        developments. Benjamin Caron makes the viewing more
+                        interesting with a strong, visually appealing direction,
+                        and the cast also deserves praise, especially Briana
+                        Middleton. I recommend it to fans of the genre, but be
+                        warned that the ending holds enough potential to, in
+                        some way, either spoil or elevate the overall
+                        experience. "
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="full__cast__crew">
+                <div class="card__title">
+                  <p class="border_bottom">
+                    <a href="#">Read All Reviews</a>
+                  </p>
+                  <h3>Media</h3>
+                  <button class="active__button active__border">
+                    <span>Most Popular</span>
+                  </button>
+                  <button class="active__button active__border">
+                    <span>Videos</span>
+                    <span>1</span>
+                  </button>
+                  <button class="active__button active__border">
+                    <span>Backdrops</span>
+                    <span>38</span>
+                  </button>
+                  <button class="active__button active__border">
+                    <span>Posters</span>
+                    <span>43</span>
+                  </button>
+                </div>
+                <div class="media__card__wrapper">
+                  <div class="media__card">
+                    <div class="play">
+                      <i class="fa-solid fa-play"></i>
+                      <img
+                        src="https://i.ytimg.com/vi/r00ldaPQbjs/hqdefault.jpg"
+                        alt="sharper"
+                      />
+                    </div>
+                  </div>
+                  <div class="media__card">
+                    <div class="play">
+                      <i class="fa-solid fa-play"></i>
+                      <img
+                        src="https://i.ytimg.com/vi/r00ldaPQbjs/hqdefault.jpg"
+                        alt="sharper"
+                      />
+                    </div>
+                  </div>
+                  <div class="media__card">
+                    <div class="play">
+                      <i class="fa-solid fa-play"></i>
+                      <img
+                        src="https://i.ytimg.com/vi/r00ldaPQbjs/hqdefault.jpg"
+                        alt="sharper"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recommendation">
+                <h5>Recommendations</h5>
+                <p>
+                  We don't have enough data to suggest any movies based on
+                  Sharper. You can help by rating movies you've seen.
+                </p>
+              </div>
+            </div>
+            <div class="col-3">
+              <section>
+                <div class="status border_bottom">
+                  <div class="social__links mb-5">
+                    <img
+                      width="40"
+                      src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-351-link-5f643a86c2515cb06ea08ebc798941824f76bbcea4ed571222a81f271b30c7f3.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p>
+                    <strong>Status</strong>
+                    <small>Released</small>
+                  </p>
+                  <p>
+                    <strong>Original Language</strong>
+                    <small>English</small>
+                  </p>
+                  <p>
+                    <strong>Budget</strong>
+                    <small>-</small>
+                  </p>
+                  <p>
+                    <strong>Revenue</strong>
+                    <small>-</small>
+                  </p>
+                  <h5 class="mb-2"><b>Keywords</b></h5>
+                  <button>new york city</button>
+                  <button>billionaire</button>
+                </div>
+                <div class="content__score">
+                  <h5>Content Score</h5>
+                  <button>100</button>
+                  <small>Yes! Looking good!</small>
+                </div>
+                <div class="top__contributors">
+                  <h5>Top Contributors</h5>
+                  <div class="contributor__card">
+                    <div class="image__wrapper">
+                      <img
+                        src="https://www.themoviedb.org/t/p/w150_and_h150_face/3nyT3aw7YK2fmP0egcxUY8sJVqQ.jpg"
+                        alt="gus"
+                      />
+                    </div>
+                    <div class="content__wrapper">
+                      <strong>216</strong>
+                      <p>Gus</p>
+                    </div>
+                  </div>
+                  <div class="contributor__card">
+                    <div class="image__wrapper">
+                      <img
+                        src="https://www.themoviedb.org/t/p/w45_and_h45_face/jXJOikkIW2dOxl6VlciUUlqQmbN.jpg"
+                        alt="tyler"
+                      />
+                    </div>
+                    <div class="content__wrapper">
+                      <strong>37</strong>
+                      <p>tyler</p>
+                    </div>
+                  </div>
+                  <div class="contributor__card">
+                    <div class="image__wrapper">
+                      <img
+                        src="https://www.themoviedb.org/t/p/w45_and_h45_face/yYG7Rhn9HfFpssIMeNiDynvxC14.jpg"
+                        alt="raze"
+                      />
+                    </div>
+                    <div class="content__wrapper">
+                      <strong>35</strong>
+                      <p>raze464</p>
+                    </div>
+                  </div>
+                  <div class="contributor__card">
+                    <div class="image__wrapper">
+                      <span>T</span>
+                    </div>
+                    <div class="content__wrapper">
+                      <strong>14</strong>
+                      <p>tmdb87877221</p>
+                    </div>
+                  </div>
+                  <a href="">View Edit History</a>
+                </div>
+                <button>Edit Page</button>
+                <div>
+                  <p>Keyboard Shortcuts</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================================================  HEADER  ================================================== -->
+    <footer class="mt-5">
+      <nav>
+        <div>
+          <img
+            width="130"
+            height="94"
+            src="../media/section_img_2.svg"
+            alt=""
+          />
+          <div class="visitor">
+            <a href="#">JOIN THE COMMUNITY</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>THE BASICS</h3>
+          <ul>
+            <li>
+              <a href="#">About TMDB</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Support Forums</a>
+            </li>
+            <li>
+              <a href="#">API</a>
+            </li>
+            <li>
+              <a href="#">System Status</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>GET INVOLVED</h3>
+          <ul>
+            <li>
+              <a href="#">Contribution Bible</a>
+            </li>
+            <li>
+              <a href="#">Add New Movie</a>
+            </li>
+            <li>
+              <a href="#">Add New TV Show</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>COMMUNITY</h3>
+          <ul>
+            <li>
+              <a href="#">Guidelines</a>
+            </li>
+            <li>
+              <a href="#">Discussions</a>
+            </li>
+            <li>
+              <a href="#">Leaderboard</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>LEGAL</h3>
+          <ul>
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#">API Terms of Use</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <!-- ==================================================  HEADER  ================================================== -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="../js/app.js"></script> -->
+    <script src="../js/details.js"></script>
+  </body>
+</html>

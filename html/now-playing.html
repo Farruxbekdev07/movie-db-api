@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Now Playing</title>
+</head>
+<body>
+<!-- ==================================================  HEADER  ================================================== -->
+<div class="container">
+    <header>
+        <div class="nav-wrapper">
+            <a href="../index.html">
+                <img width="154" height="20" src="../media/section_img_4.svg" alt="tmdb">
+            </a>
+            <div class="dropdown movie_text">
+                <button class="btn btn-secondary active" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Movies
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/popular.html">Popular</a></li>
+                    <li><a class="dropdown-item" href="../html/now-playing.html">Now Playing</a></li>
+                    <li><a class="dropdown-item" href="../html/upcoming.html">Upcoming</a></li>
+                    <li><a class="dropdown-item" href="../html/top-rated.html">Top Rated</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary active" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TV Shows
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/popular.html">Popular</a></li>
+                    <li><a class="dropdown-item" href="../html/airing-today.html">Airing Today</a></li>
+                    <li><a class="dropdown-item" href="../html/on-tv.html">On TV</a></li>
+                    <li><a class="dropdown-item" href="../html/top-rated.html">Top Rated</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary active" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    People
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/popular.html">Popular People</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary active" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/discussions.html">Discussions</a></li>
+                    <li><a class="dropdown-item" href="../html/leaderboard.html">Leaderboard</a></li>
+                    <li><a class="dropdown-item" href="../html/support.html">Support</a></li>
+                    <li><a class="dropdown-item" href="../html/api.html">Api</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="flex">
+            <p>
+                <i class="fa-solid fa-plus"></i>
+            </p>
+            <div class="select-language">
+                <p>en</p>
+            </div>
+            <p>
+                <i class="fa-solid fa-bell"></i>
+            </p>
+            <p>
+                <i class="fa-solid fa-user-tie"></i>
+            </p>
+            <p>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </p>
+        </div>
+    </header>
+</div>
+<!-- ==================================================  HEADER  ================================================== -->
+
+
+
+<!-- ==================================================  MAIN  ================================================== -->
+<!-- ==================================================  MAIN  ================================================== -->
+<main class="popular">
+    <div class="container">
+        <h3>Popular Movies</h3>
+        <section class="popular__movies d-flex">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Sort
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <p>Sort Results By</p>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Popularity Descending
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">Popularity Descending</a></li>
+                                    <li><a class="dropdown-item" href="#">Popularity Ascending</a></li>
+                                    <li><a class="dropdown-item" href="#">Rating Descending</a></li>
+                                    <li><a class="dropdown-item" href="#">Rating Ascending</a></li>
+                                    <li><a class="dropdown-item" href="#">Releate Date Descending</a></li>
+                                    <li><a class="dropdown-item" href="#">Releate Date Ascending</a></li>
+                                    <li><a class="dropdown-item" href="#">Title(A-Z)</a></li>
+                                    <li><a class="dropdown-item" href="#">Title(Z-A)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Filters
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <div class="show__me__wrapper">
+                                <p>Show Me</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Everything
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Movies I Haven't Seen
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Movies I Have Seen
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="availabilities__wrapper">
+                                <p>Availabilities</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Search all availabilities?
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Stream
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Free
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Ads
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Rent
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Buy
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="release__dates__wrapper">
+                                <p>Release Dates</p>
+                                <div class="date-from d-flex">
+                                    <p>from</p>
+                                    <input type="date">
+                                </div>
+                                <div class="date-to ">
+                                    <p>to</p>
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <div class="genres__wrapper">
+                                <p>Genres</p>
+                                <div class="btn__wrapper">
+                                    <button>Action</button>
+                                    <button>Adventure</button>
+                                    <button>Animation</button>
+                                    <button>Comedy</button>
+                                    <button>Crime</button>
+                                    <button>Documentary</button>
+                                    <button>Drama</button>
+                                    <button>Family</button>
+                                    <button>Fantasy</button>
+                                    <button>History</button>
+                                    <button>Horror</button>
+                                    <button>Music</button>
+                                    <button>Mystery</button>
+                                    <button>Romance</button>
+                                    <button>Science Fiction</button>
+                                    <button>TV Movie</button>
+                                    <button>Thriller</button>
+                                    <button>War</button>
+                                    <button>Western</button>
+                                </div>
+                            </div>
+                            <div class="certification__wrapper">
+                                <p>Certification</p>
+                            </div>
+                            <div class="language__wrapper">
+                                <p>Language</p>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        English
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <input type="text" id="search" placeholder="Search Language">
+                                        <li><a class="dropdown-item active" href="#">English</a></li>
+                                        <li><a class="dropdown-item" href="#">Russian</a></li>
+                                        <li><a class="dropdown-item" href="#">French</a></li>
+                                        <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                        <li><a class="dropdown-item" href="#">Indian</a></li>
+                                        <li><a class="dropdown-item" href="#">German</a></li>
+                                        <li><a class="dropdown-item" href="#">Italian</a></li>
+                                        <li><a class="dropdown-item" href="#">Chines</a></li>
+                                        <li><a class="dropdown-item" href="#">Korean</a></li>
+                                        <li><a class="dropdown-item" href="#">Uzbek</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Where To Watch
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <div class="my__services__wrapper">
+                                <p>My Services 
+                                    <a href="">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Restrict searches to my subscribed services?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="country__wrapper">
+                                <p>Country</p>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        England
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <input type="text" id="search" placeholder="Search Country">
+                                        <li><a class="dropdown-item active" href="#">England</a></li>
+                                        <li><a class="dropdown-item" href="#">Russian</a></li>
+                                        <li><a class="dropdown-item" href="#">French</a></li>
+                                        <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                        <li><a class="dropdown-item" href="#">Indian</a></li>
+                                        <li><a class="dropdown-item" href="#">German</a></li>
+                                        <li><a class="dropdown-item" href="#">Italian</a></li>
+                                        <li><a class="dropdown-item" href="#">Chines</a></li>
+                                        <li><a class="dropdown-item" href="#">Korean</a></li>
+                                        <li><a class="dropdown-item" href="#">Uzbek</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>Search</button>
+            </div>
+            <div class="movies">
+                <div class="movie-card-wrapper">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <a href="#">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg" alt="">
+                            </a>
+                            <div class="option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="10" y="20" class="percentage">70%</text>
+                            </svg>
+                            <h2>
+                                <a href="">Shotgun Wedding</a>
+                            </h2>
+                            <p>Dec 28, 2022</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <a href="#">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg" alt="">
+                            </a>
+                            <div class="option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="10" y="20" class="percentage">70%</text>
+                            </svg>
+                            <h2>
+                                <a href="">Shotgun Wedding</a>
+                            </h2>
+                            <p>Dec 28, 2022</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <a href="#">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg" alt="">
+                            </a>
+                            <div class="option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="10" y="20" class="percentage">70%</text>
+                            </svg>
+                            <h2>
+                                <a href="">Shotgun Wedding</a>
+                            </h2>
+                            <p>Dec 28, 2022</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <a href="#">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg" alt="">
+                            </a>
+                            <div class="option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="10" y="20" class="percentage">70%</text>
+                            </svg>
+                            <h2>
+                                <a href="">Shotgun Wedding</a>
+                            </h2>
+                            <p>Dec 28, 2022</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <a href="#">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg" alt="">
+                            </a>
+                            <div class="option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="10" y="20" class="percentage">70%</text>
+                            </svg>
+                            <h2>
+                                <a href="">Shotgun Wedding</a>
+                            </h2>
+                            <p>Dec 28, 2022</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <a href="#">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg" alt="">
+                            </a>
+                            <div class="option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="10" y="20" class="percentage">70%</text>
+                            </svg>
+                            <h2>
+                                <a href="">Shotgun Wedding</a>
+                            </h2>
+                            <p>Dec 28, 2022</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <a href="#">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg" alt="">
+                            </a>
+                            <div class="option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="10" y="20" class="percentage">70%</text>
+                            </svg>
+                            <h2>
+                                <a href="">Shotgun Wedding</a>
+                            </h2>
+                            <p>Dec 28, 2022</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <a href="#">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/t79ozwWnwekO0ADIzsFP1E5SkvR.jpg" alt="">
+                            </a>
+                            <div class="option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle"
+                                  stroke-dasharray="70, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="10" y="20" class="percentage">70%</text>
+                            </svg>
+                            <h2>
+                                <a href="">Shotgun Wedding</a>
+                            </h2>
+                            <p>Dec 28, 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <button>Load More</button>
+            </div>
+        </section>
+    </div>
+</main>
+<!-- ==================================================  MAIN  ================================================== -->
+
+<!-- ==================================================  MAIN  ================================================== -->
+
+
+
+<!-- ==================================================  FOOTER  ================================================== -->
+<footer class="mt-5">
+    <nav>
+        <div>
+            <img width="130" height="94" src="../media/section_img_2.svg" alt="">
+            <div class="visitor">
+                <a href="#">JOIN THE COMMUNITY</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>THE BASICS</h3>
+            <ul>
+                <li>
+                    <a href="#">About TMDB</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Support Forums</a>
+                </li>
+                <li>
+                    <a href="#">API</a>
+                </li>
+                <li>
+                    <a href="#">System Status</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>GET INVOLVED</h3>
+            <ul>
+                <li>
+                    <a href="#">Contribution Bible</a>
+                </li>
+                <li>
+                    <a href="#">Add New Movie</a>
+                </li>
+                <li>
+                    <a href="#">Add New TV Show</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>COMMUNITY</h3>
+            <ul>
+                <li>
+                    <a href="#">Guidelines</a>
+                </li>
+                <li>
+                    <a href="#">Discussions</a>
+                </li>
+                <li>
+                    <a href="#">Leaderboard</a>
+                </li>
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>LEGAL</h3>
+            <ul>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="#">API Terms of Use</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<!-- ==================================================  FOOTER  ================================================== -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

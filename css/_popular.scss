@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.popular{
+    margin: 100px 0;
+    
+    .accordion .dropdown button {
+        width: 100%;
+    }
+    
+    .accordion-item {
+        width: 250px;
+    }
+    
+    .accordion-body {
+        
+        .dropdown-menu {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 200px;
+            width: 100%;
+        }
+        
+        .show__me__wrapper {
+            border-bottom: 1px solid red;
+        }
+        
+        .availabilities__wrapper {
+            border-bottom: 1px solid red;
+        }
+        
+        .release__dates__wrapper {
+            border-bottom: 1px solid red;
+        }
+        
+        .genres__wrapper {
+            border-bottom: 1px solid red;
+        }
+    }
+
+    .movies {
+        display: grid;
+        width: 70vw;
+        min-width: 50vw;
+        max-width: 700vw;
+        margin-left: 10px;
+
+        .movie-card-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            overflow: hidden;
+
+            .card {
+                box-shadow: 0 0 3px gray;
+                width: 100%;
+                min-height: 300px;
+                height: 300px;
+                margin: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
