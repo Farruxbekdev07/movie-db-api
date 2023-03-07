@@ -266,220 +266,333 @@
         padding: 30px 0;
         border-bottom: 2px solid lightgray;
     }
-
-    .cast__wrapper {
-
-        h3 {
-            font-weight: 600;
-            font-size: 1.4em;
-            margin-bottom: 20px;
-        }
-
-        .cast__card__wrapper {
-            overflow-y: hidden;
-            overflow-x: scroll;
-            display: flex;
-            padding: 15px 10px;
-            
-            .cast__card {
-                min-width: 140px;
-                width: calc(140px + 20px);
-                background-color: #fff;
-                margin-right: 20px;
-                height: 255px;
-                border-radius: 10px;
-                box-shadow: 0 0 3px gray;
-                overflow: hidden;
-                border: 1px solid lightgray;
-
-                .cast__image__wrapper {
-
-                    a {
-                        min-width: 138px;
-                        width: 138px;
-                        height: 175px;
-                        display: block;
-                        
-                        img {
-                            width: 138px;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-                    }
-
-                }
-
-                .cast__content__wrapper {
-                    padding: 5px;
-                    
-                    p {
-                        font-weight: 500;
-                        margin: 0;
-                    }
-
-                    p:first-child {
-                        font-weight: 600;
-                    }
-                }
-            }
-        }
-    }
-
-    .full__cast__crew {
-
-        .card__title {
-
-            p {
-                font-weight: 600;
-                font-size: 1.1em;
-
-                a {
-                    text-decoration: none;
-                    color: #000;
-                }
-            }
-
+    .col-9 {
+        
+    
+        .cast__wrapper {
+    
             h3 {
                 font-weight: 600;
                 font-size: 1.4em;
                 margin-bottom: 20px;
-                margin-right: 50px;
-                display: inline-block;
             }
-
-        }
-        
-        .reviews__card {
-            display: flex;
-            box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
-            border: 1px solid rgba(227, 227, 227, 1);
-            border-radius: 10px;
-            padding: 20px;
-            width: 100%;
-            gap: 20px;
-            margin-top: 10px;
-
-            .photo__wrapper {
-
-                img {
-                    height: 64px;
-                    width: 64px;
-                    border-radius: 50%;
-
-                }
-            }
-
-            .reviews__card__content {
-
-                .card__content__title {
-                    display: flex;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    justify-content: center;
-                    height: 64px;
-                    margin-bottom: 20px;
-
-                    p {
-                        margin: 0;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
-
+    
+            .cast__card__wrapper {
+                overflow-y: hidden;
+                overflow-x: scroll;
+                display: flex;
+                padding: 15px 10px;
+                
+                .cast__card {
+                    min-width: 140px;
+                    width: calc(140px + 20px);
+                    background-color: #fff;
+                    margin-right: 20px;
+                    height: 255px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 3px gray;
+                    overflow: hidden;
+                    border: 1px solid lightgray;
+    
+                    .cast__image__wrapper {
+    
                         a {
-                            text-decoration: none;
-                            color: black;
-                            font-size: 1.3em;
-                            font-weight: 700;
-                        }
-
-                        button {
-                            background: #000;
-                            color: #fff;
-                            border-radius: 8px;
-                            padding: 1px 8px;
-                            font-size: 0.9em;
-                            display: inline-flex;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 5px;
-                            margin-left: 14px;
-
-                            i {
-                                font-size: 0.8em;
+                            min-width: 138px;
+                            width: 138px;
+                            height: 175px;
+                            display: block;
+                            
+                            img {
+                                width: 138px;
+                                height: 100%;
+                                object-fit: cover;
                             }
                         }
-
-                        small {
-                            font-weight: 300;
-                            font-size: 0.9em !important;
+    
+                    }
+    
+                    .cast__content__wrapper {
+                        padding: 5px;
+                        
+                        p {
+                            font-weight: 500;
+                            margin: 0;
+                        }
+    
+                        p:first-child {
+                            font-weight: 600;
                         }
                     }
                 }
+            }
+        }
+    
+        .full__cast__crew {
+    
+            .card__title {
+    
+                p {
+                    font-weight: 600;
+                    font-size: 1.1em;
+    
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+    
+                h3 {
+                    font-weight: 600;
+                    font-size: 1.4em;
+                    margin-bottom: 20px;
+                    margin-right: 50px;
+                    display: inline-block;
+                }
+    
+            }
+            
+            .reviews__card {
+                display: flex;
+                box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+                border: 1px solid rgba(227, 227, 227, 1);
+                border-radius: 10px;
+                padding: 20px;
+                width: 100%;
+                gap: 20px;
+                margin-top: 10px;
+    
+                .photo__wrapper {
+    
+                    img {
+                        height: 64px;
+                        width: 64px;
+                        border-radius: 50%;
+    
+                    }
+                }
+    
+                .reviews__card__content {
+    
+                    .card__content__title {
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 64px;
+                        margin-bottom: 20px;
+    
+                        p {
+                            margin: 0;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                font-size: 1.3em;
+                                font-weight: 700;
+                            }
+    
+                            button {
+                                background: #000;
+                                color: #fff;
+                                border-radius: 8px;
+                                padding: 1px 8px;
+                                font-size: 0.9em;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 5px;
+                                margin-left: 14px;
+    
+                                i {
+                                    font-size: 0.8em;
+                                }
+                            }
+    
+                            small {
+                                font-weight: 300;
+                                font-size: 0.9em !important;
+                            }
+                        }
+                    }
+    
+                    h6 {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+    
+            .media__card__wrapper {
+                margin-top: 10px;
+                display: flex;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                border-radius: 8px;
+    
+                .media__card .play {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 500px;
+                    height: 300px;
+    
+                    i {
+                        color: white;
+                        font-size: 1.7em;
+                        background: rgba(0, 0, 0, 0.70);
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        width: 70px;
+                        height: 70px;
+                    }
 
-                h6 {
-                    margin-bottom: 16px;
+                    i:hover {
+                        color: gray;
+                        cursor: pointer;
+                    }
                 }
             }
         }
-
-        .media__card__wrapper {
-            margin-top: 10px;
-            display: flex;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            border-radius: 8px;
-
-            .media__card .play {
-                display: flex;
-
-                i {
-                    position: relative;
-                    top: 100%;
-                    left: 10%;
-                    color: white;
-                }
+    
+        .active__button {
+            border: none;
+            background: transparent;
+            margin-right: 10px;
+            font-weight: 600;
+    
+            span {
+                opacity: 0.5;
             }
+    
+            span:first-child {
+                color: #000;
+                opacity: 1;
+            }
+        }
+    
+        .active__border {
+            border-bottom: 5px solid black;
+            padding: 5px 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
         }
     }
+    
+    .col-3 {
 
-    .active__button {
-        border: none;
-        background: transparent;
-        margin-right: 10px;
-        font-weight: 600;
-
-        span {
-            opacity: 0.5;
+        .status {
+    
+            p {
+                display: grid;
+            }
+    
+            button {
+                background-color: rgba(0,0,0,0.1);
+                border: 1px solid #d7d7d7;
+                color: #000;
+                padding: 4px 10px;
+                border-radius: 4px;
+            }
         }
 
-        span:first-child {
-            color: #000;
+        h4 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .content__score {
+            padding: 30px 0;
+ 
+            button {
+                width: 100%;
+                height: 38px;
+                border-color: #000;
+                background: #000;
+                color: #fff;
+                text-align: left;
+                border-radius: 8px;
+                padding: 0 8px;
+                font-weight: 600;
+            }
+        }
+
+        .top__contributors {
+
+            .contributor__card {
+                display: flex;
+                gap: 10px;
+
+                .image__wrapper {
+                    width: 45px;
+                    height: 45px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        background: rgba(2, 169, 169, 0.664);
+                        color: white;
+                        font-weight: normal;
+                        font-size: 1.1em;
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                display: block;
+                font-weight: normal;
+                margin: 20px 0;
+            }
+
+        }
+
+        .edit-btn {
+            font-weight: 600;
+            font-size: 1em;
+            text-transform: uppercase;
+            color: white;
+            background: #000;
+            padding: 6px 20px;
+            border-radius: 20px;
+            opacity: 0.9;
+        }
+
+        .edit-btn:hover {
             opacity: 1;
         }
-    }
 
-    .active__border {
-        border-bottom: 5px solid black;
-        padding: 5px 0;
-    }
+        .a__link {
+            padding-top: 30px;
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .status {
-
-        p {
-            display: grid;
+            a {
+                text-decoration: none;
+                color: #081c22;
+                opacity: 0.8;
+            }
         }
 
-        button {
-            background-color: rgba(0,0,0,0.1);
-            border: 1px solid #d7d7d7;
-            color: #000;
-            padding: 4px 10px;
-            border-radius: 4px;
+        a:hover {
+            opacity: 0.5;
         }
     }
 }
